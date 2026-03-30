@@ -1,3 +1,3 @@
 FROM redhat/ubi9
 RUN dnf -y install nginx
-CMD
+CMD ["nginx", "-g", "daemon off;"]
